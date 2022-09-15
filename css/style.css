@@ -427,73 +427,6 @@ body::after {
   padding: 0 0 0 25px;
 }
 
-.spollers__title {
-  width: 100%;
-  cursor: default;
-  text-align: left;
-  border: 1px solid #eee;
-  padding: 0.625rem 0.9375rem;
-  border-radius: 0.3125rem;
-  position: relative;
-}
-
-._spoller-init .spollers__title {
-  cursor: pointer;
-}
-
-._spoller-init .spollers__title::before,
-._spoller-init .spollers__title::after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  background-color: #fff;
-  height: 2px;
-  width: 15px;
-  -webkit-transition: -webkit-transform 0.5s ease 0s;
-  transition: -webkit-transform 0.5s ease 0s;
-  -o-transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-}
-
-._spoller-init .spollers__title::before {
-  -webkit-transform: translate(-75%, -50%) rotate(45deg);
-      -ms-transform: translate(-75%, -50%) rotate(45deg);
-          transform: translate(-75%, -50%) rotate(45deg);
-}
-
-._spoller-init .spollers__title::after {
-  -webkit-transform: translate(0, -50%) rotate(-45deg);
-      -ms-transform: translate(0, -50%) rotate(-45deg);
-          transform: translate(0, -50%) rotate(-45deg);
-}
-
-._spoller-init .spollers__title._spoller-active {
-  border-bottom: none;
-  border-radius: 0.3125rem 0.3125rem 0rem 0rem;
-}
-
-._spoller-init .spollers__title._spoller-active::before {
-  -webkit-transform: translateX(-65%) rotate(-45deg);
-      -ms-transform: translateX(-65%) rotate(-45deg);
-          transform: translateX(-65%) rotate(-45deg);
-}
-
-._spoller-init .spollers__title._spoller-active::after {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.spollers__body {
-  padding: 0.625rem;
-  border-radius: 0rem 0rem 0.3125rem 0.3125rem;
-  border: 1px solid #eee;
-  background: #edebdf;
-  color: black;
-}
-
 .right-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -707,7 +640,7 @@ body::after {
 }
 
 .education__icon {
-  margin: 0 auto 20px;
+  margin: 0px auto;
 }
 
 .education__items {
@@ -748,6 +681,63 @@ body::after {
           flex: 1 1 auto;
 }
 
+.spollers__title {
+  text-align: center;
+  width: 100%;
+  cursor: default;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+._spoller-init .spollers__title {
+  cursor: pointer;
+}
+
+._spoller-init .spollers__title::before,
+._spoller-init .spollers__title::after {
+  content: "";
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  background-color: rgb(0, 0, 0);
+  height: 2px;
+  width: 15px;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+._spoller-init .spollers__title::before {
+  -webkit-transform: translate(-75%, -50%) rotate(45deg);
+      -ms-transform: translate(-75%, -50%) rotate(45deg);
+          transform: translate(-75%, -50%) rotate(45deg);
+}
+
+._spoller-init .spollers__title::after {
+  -webkit-transform: translate(0, -50%) rotate(-45deg);
+      -ms-transform: translate(0, -50%) rotate(-45deg);
+          transform: translate(0, -50%) rotate(-45deg);
+}
+
+._spoller-init .spollers__title._spoller-active {
+  border-bottom: none;
+  border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+}
+
+._spoller-init .spollers__title._spoller-active::before {
+  -webkit-transform: translateX(-65%) rotate(-45deg);
+      -ms-transform: translateX(-65%) rotate(-45deg);
+          transform: translateX(-65%) rotate(-45deg);
+}
+
+._spoller-init .spollers__title._spoller-active::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .experience__title {
   margin: 0 0 10px 0;
 }
@@ -765,7 +755,7 @@ body::after {
 }
 
 .experience__icon {
-  margin: 0 auto 20px;
+  margin: 0 auto 0px;
 }
 
 .experience__box {
@@ -859,10 +849,6 @@ body::after {
 
   .skills__subitem {
     font-size: 15px;
-  }
-
-  .spollers__title {
-    padding: 0.3125rem 0.625rem;
   }
 
   .right-portfolio__about-me {
@@ -1007,10 +993,6 @@ body::after {
 
   .skills__subitem {
     font-size: 17px;
-  }
-
-  .spollers__title {
-    padding: 0.625rem 0.9375rem;
   }
 
   .right-portfolio__about-me {
