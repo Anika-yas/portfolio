@@ -771,6 +771,12 @@ body::after {
   gap: 10px;
 }
 
+.experience__box:not(:last-child) {
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid black;
+  padding: 0 0 5px 0;
+}
+
 .experience__data {
   font-size: 17px;
   text-transform: uppercase;
